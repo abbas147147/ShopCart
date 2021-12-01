@@ -2,20 +2,43 @@
   display: flex;
   justify-content: space-between;
   width: 100%;
-  height: 150px;
-  background-color: aqua;
+  height: 70px;
   margin-bottom: 100px;
+  background: linear-gradient(to right, #43616e, #ac3535);
+  position: fixed;
+  top: 0;
 }
 .menu {
   display: flex;
   width: 50%;
   justify-content: space-evenly;
-  line-height: 150px;
+  line-height: 70px;
 }
-.shop {
-  line-height: 150px;
-  margin-right: 250px;
+.menu h2:hover {
+  color: #4c00ff;
 }
 .menu a {
   text-decoration: none;
+}
+.menu h2 {
+  color: #fff;
+}
+.shop {
+  line-height: 110px;
+  margin-right: 250px;
+}
+.shop img {
+  position: relative;
+  width: 40px;
+  cursor: pointer;
+}
+
+.spn {
+  position: absolute;
+  bottom: -3px;
+  right: 264px;
+  border-radius: 50%;
+  color: #fff;
+  font-size: 1.2rem;
+  width: 15px;
 }
