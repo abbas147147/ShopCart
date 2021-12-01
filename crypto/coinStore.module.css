@@ -1,0 +1,29 @@
+.container {
+  margin: 50px auto;
+  width: fit-content;
+  border: 1px solid silver;
+  border-radius: 10px;
+  background-color: #f6f6f6;
+}
+.container input {
+  width: 300px;
+  border: 1px solid silver;
+  border-radius: 5px;
+  margin: 50px auto;
+  height: 20px;
+  padding: 5px;
+  background-color: #fff;
+  height: 32px;
+}
+.container input:focus {
+  border: #fff;
+  background-color: #fff;
+  outline: none;
+}
+.inp {
+  display: flex;
+  justify-content: center;
+}
+.container input::placeholder {
+  text-align: center;
+}

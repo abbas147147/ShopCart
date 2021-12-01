@@ -4,6 +4,9 @@ import React, { useState, useEffect } from "react";
 import { getCoin } from "../services/api";
 //shared
 import Coin from "./shared/Coin";
+import Loader from "./Loader";
+//css
+import styles from "./coinStore.module.css";
 
 const CoinStore = () => {
   const [coin, setCoin] = useState([]);
@@ -25,16 +28,25 @@ const CoinStore = () => {
   );
 
   return (
-    <div>
-      <input
-        type="text"
-        placeholder="Search"
-        value={search}
-        onChange={searchHandler}
-      />
-      {searchCoin.map((item) => (
-        <Coin key={item.id} data={item} />
-      ))}
+    <div className={styles.container}>
+      <div className={styles.inp}>
+        <input
+          type="text"
+          placeholder="Search"
+          value={search}
+          onChange={searchHandler}
+        />
+      </div>
+      {coin.length ? (
+        <div>
+          {" "}
+          {searchCoin.map((item) => (
+            <Coin key={item.id} data={item} />
+          ))}
+        </div>
+      ) : (
+        <Loader />
+      )}
     </div>
   );
 };

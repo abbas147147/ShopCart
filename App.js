@@ -13,10 +13,12 @@ import Login from "./SignUp&Login/Login";
 import SignUp from "./SignUp&Login/SignUp";
 //Crypto
 import CoinStore from "./crypto/CoinStore";
+//css
+import styles from "./app.css";
 
 const App = () => {
   return (
-    <div>
+    <div className={styles.app}>
       <ProductsContextProvider>
         <CartContextProvider>
           <Navbar />

@@ -1,0 +1,42 @@
+.container {
+  border-bottom: 1px solid silver;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 15px 40px;
+  color: #252129;
+}
+.container:last-child {
+  border: none;
+}
+.container img {
+  width: 30px;
+}
+.name {
+  text-align: left;
+  margin-left: 18px;
+  width: 140px;
+  font-weight: bold;
+  font-size: 15px;
+  color: #333333;
+}
+.symbol {
+  width: 100px;
+  text-align: left;
+}
+.price {
+  width: 100px;
+  text-align: left;
+}
+.green,
+.red {
+  width: 100px;
+  text-align: left;
+  font-weight: bold;
+}
+.green {
+  color: green;
+}
+.red {
+  color: red;
+}
