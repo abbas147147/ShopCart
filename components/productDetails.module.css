@@ -40,7 +40,7 @@
   justify-content: space-between;
   align-items: center;
 }
-.price {
+.buttonsContainer span {
   width: fit-content;
   color: #fff;
   background-color: green;
@@ -50,7 +50,8 @@
 .buttonsContainer a {
   text-decoration: none;
   width: fit-content;
-  background-color: #fff;
-  color: #1a73e8;
+  background-color: #1a73e8;
   border-radius: 5px;
+  color: #fff;
+  padding: 4px 8px;
 }

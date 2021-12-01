@@ -3,6 +3,10 @@ import React, { useContext } from "react";
 import { CartContext } from "../../context/CartContextProvider";
 //functions
 import { shorten } from "../../helpers/functions";
+//icons
+import trash from "../../assets/icons/trash.svg";
+//css
+import styles from "./cart.module.css";
 
 const Cart = ({ data }) => {
   const { state, dispatch } = useContext(CartContext);
@@ -10,17 +14,17 @@ const Cart = ({ data }) => {
   const { image, title, price, quantity, category } = data;
 
   return (
-    <div>
-      <img src={image} alt="product" style={{ width: "100px" }} />
+    <div className={styles.container}>
+      <img src={image} alt="product" />
       <h2> {shorten(title)} </h2>
-      <p>
+      <p className={styles.category}>
         category: <span>{category}</span>
       </p>
-      <p>
+      <p className={styles.iCounter}>
         Items: <span>{quantity} </span>
       </p>
-      <p> {price} $ </p>
-      <div>
+      <p className={styles.priceTag}> {price} $ </p>
+      <div className={styles.buttonsContainer}>
         {quantity > 1 ? (
           <button onClick={() => dispatch({ type: "DECREASE", payload: data })}>
             -
@@ -29,9 +33,10 @@ const Cart = ({ data }) => {
           <button
             onClick={() => dispatch({ type: "REMOVE_ITEM", payload: data })}
           >
-            R
+            <img src={trash} alt="trash" style={{ width: "20px" }} />
           </button>
         )}
+        {quantity && <span className={styles.Quantity}>{quantity}</span>}
         {
           <button onClick={() => dispatch({ type: "INCREASE", payload: data })}>
             +

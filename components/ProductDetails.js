@@ -24,8 +24,8 @@ const ProductDetails = (props) => {
           <span>category: {category} </span>
         </p>
         <div className={styles.buttonsContainer}>
-          <span className={styles.price}> {price} $</span>
-          <Link to="/products">Bach To Shop</Link>
+          <span> {price} $</span>
+          <Link to="/products">Back To Shop</Link>
         </div>
       </div>
     </div>

@@ -8,7 +8,7 @@
 .formContainer {
   border: 1px solid silver;
   border-radius: 10px;
-  margin: 40px;
+  margin: 140px;
   padding: 40px;
   width: fit-content;
   height: fit-content;
@@ -45,7 +45,7 @@
   color: red;
   width: fit-content;
   background-color: rgba(255, 0, 0, 0.175);
-  line-height: 10px;
+  line-height: 5px;
   border-radius: 3px;
   font-size: 0.7rem;
   padding: 3px 5px;
@@ -110,4 +110,7 @@ input[type="checkbox"]:checked {
   padding: 4px 7px;
   border-radius: 7px;
   cursor: pointer;
+}
+.formButtons button:hover {
+  background-color: #001b3d;
 }

@@ -1,0 +1,76 @@
+.container {
+  margin: 150px auto;
+}
+.calculator {
+  text-align: center;
+  margin: 50px auto;
+  border: 1px solid silver;
+  padding: 15px 20px;
+  width: 400px;
+  background-color: #f6f6f6;
+  border-radius: 10px;
+}
+.calculator p {
+  font-size: 1.5rem;
+  margin: 20px 10px;
+  text-align: left;
+}
+.ButtonContainer {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px 20px;
+}
+.ButtonContainer button {
+  background-color: blue;
+  color: white;
+  padding: 5px 8px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 1.2rem;
+}
+.ButtonContainer button:hover {
+  background-color: rgb(0, 0, 107);
+}
+
+.sum span {
+  color: #fff;
+  background-color: green;
+  width: fit-content;
+  padding: 3px 5px;
+  border-radius: 5px;
+  margin-left: 30px;
+  font-size: 1.1rem;
+}
+.counter span {
+  color: #fff;
+  background-color: rgb(32, 19, 214);
+  width: fit-content;
+  padding: 6px 11px;
+  border-radius: 100%;
+  margin-left: 50px;
+  font-size: 1rem;
+}
+.finish {
+  margin: 150px auto;
+  border: 1px solid silver;
+  padding: 40px;
+  text-align: center;
+  width: fit-content;
+  background-color: #f6f6f6;
+  font-size: 1.5rem;
+  border-radius: 10px;
+}
+.finish h2 {
+  color: green;
+  margin: 25px 10px;
+}
+.finish a {
+  text-decoration: none;
+  cursor: pointer;
+  color: #fff;
+  background-color: rgb(82, 82, 230);
+  padding: 5px 8px;
+  border-radius: 6px;
+  font-size: 1.4rem;
+}

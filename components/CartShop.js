@@ -5,24 +5,26 @@ import { CartContext } from "../context/CartContextProvider";
 import Cart from "./shared/Cart";
 //link
 import { Link } from "react-router-dom";
+//css
+import styles from "./cartShop.module.css";
 
 const CartShop = () => {
   const { state, dispatch } = useContext(CartContext);
 
   return (
-    <div>
+    <div className={styles.container}>
       {state.selectItem.map((item) => (
         <Cart key={item.id} data={item} />
       ))}
       {state.itemCounter > 0 && (
-        <div>
-          <p>
+        <div className={styles.calculator}>
+          <p className={styles.counter}>
             Total products : <span> {state.itemCounter} </span>
           </p>
-          <p>
+          <p className={styles.sum}>
             Total Payments : <span> {state.total} $</span>
           </p>
-          <div>
+          <div className={styles.ButtonContainer}>
             <button
               onClick={() =>
                 dispatch({ type: "CHECKOUT", payload: state.selectItem })
@@ -41,13 +43,13 @@ const CartShop = () => {
         </div>
       )}
       {state.checkout && (
-        <div>
+        <div className={styles.finish}>
           <h2>checkout successfully</h2>
           <Link to="/products">Buy More</Link>
         </div>
       )}
       {!state.checkout && state.itemCounter === 0 && (
-        <div>
+        <div className={styles.finish}>
           <h2>Clear successfully</h2>
           <Link to="/products">Do you want buy!</Link>
         </div>

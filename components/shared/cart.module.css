@@ -1,0 +1,72 @@
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 15px auto;
+  width: 75%;
+  border: 1px solid silver;
+  padding: 15px;
+  border-radius: 10px;
+}
+.container img {
+  width: 150px;
+}
+.container h2 {
+  color: #333333;
+}
+.category {
+  font-size: 1.3rem;
+  color: rgb(0, 78, 30);
+}
+.category span {
+  color: white;
+  background-color: #1600d8 !important;
+  width: fit-content;
+  font-size: 1rem !important;
+  border-radius: 5px;
+  padding: 3px 10px;
+}
+.priceTag {
+  width: fit-content;
+  color: #fff;
+  background-color: green;
+  padding: 4px 8px;
+  border-radius: 5px;
+}
+.iCounter {
+  font-size: 1.3rem;
+  color: rgb(0, 78, 30);
+}
+.iCounter span {
+  color: #fff;
+  background-color: #4b37ff;
+  padding: 1px 6px;
+  border-radius: 100%;
+  font-size: 0.9rem !important;
+}
+.buttonsContainer {
+  display: flex;
+  justify-content: space-around;
+}
+.buttonsContainer img {
+  width: 15px;
+}
+.buttonsContainer button {
+  width: 25px;
+  border: none;
+  background-color: #1600d8;
+  color: #fff;
+  border-radius: 5px;
+  padding: 1px;
+  cursor: pointer;
+}
+.buttonsContainer button:hover {
+  background-color: #090057;
+}
+.Quantity {
+  margin: 5px;
+  border-radius: 100%;
+  background-color: green;
+  color: #fff;
+  padding: 1px 5px;
+}

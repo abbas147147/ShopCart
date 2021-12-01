@@ -28,9 +28,9 @@ const Navbar = () => {
       </div>
       <div className={styles.shop}>
         <Link to="/shopcart">
-          <img src={shop} alt="shop" />
+          <img src={shop} alt="shop" className={styles.shopIMG} />
+          <span className={styles.spn}> {state.itemCounter} </span>
         </Link>
-        <span className={styles.spn}> {state.itemCounter} </span>
       </div>
     </div>
   );
