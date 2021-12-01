@@ -8,6 +8,11 @@ import Store from "./components/Store";
 import ProductDetails from "./components/ProductDetails";
 import Navbar from "./components/Navbar";
 import CartShop from "./components/CartShop";
+//registration
+import Login from "./SignUp&Login/Login";
+import SignUp from "./SignUp&Login/SignUp";
+//Crypto
+import CoinStore from "./crypto/CoinStore";
 
 const App = () => {
   return (
@@ -16,6 +21,9 @@ const App = () => {
         <CartContextProvider>
           <Navbar />
           <Switch>
+            <Route path="/coin" component={CoinStore} />
+            <Route path="/signup" component={SignUp} />
+            <Route path="/login" component={Login} />
             <Route path="/shopcart" component={CartShop} />
             <Route path="/products/:id" component={ProductDetails} />
             <Route path="/products" component={Store} />

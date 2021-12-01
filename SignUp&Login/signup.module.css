@@ -1,0 +1,113 @@
+.container {
+  display: flex;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #f9f9f9;
+  justify-content: center;
+}
+.formContainer {
+  border: 1px solid silver;
+  border-radius: 10px;
+  margin: 40px;
+  padding: 40px;
+  width: fit-content;
+  height: fit-content;
+  background-color: #fff;
+}
+.header {
+  text-align: left;
+  color: #1a73e8;
+  font-size: 1.8rem;
+  margin-bottom: 40px;
+}
+.formField {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+  height: 70px;
+}
+.labelForm {
+  text-align: left;
+  margin-bottom: 5px;
+  font-size: 1rem;
+  color: rgb(85, 85, 85);
+}
+.formInput {
+  width: 300px;
+  height: 30px;
+  padding: 0 10px;
+  border: 1px solid silver;
+  border-radius: 6px;
+}
+.formField span {
+  margin-top: 5px;
+  height: 10px;
+  color: red;
+  width: fit-content;
+  background-color: rgba(255, 0, 0, 0.175);
+  line-height: 10px;
+  border-radius: 3px;
+  font-size: 0.7rem;
+  padding: 3px 5px;
+}
+.uncompleted {
+  width: 300px;
+  height: 30px;
+  border: 1px solid red;
+  outline: none;
+  border-radius: 5px;
+  line-height: 30px;
+}
+.formInput:focus,
+.uncompleted:focus {
+  border: 1px solid blue;
+  border-radius: 5px;
+  outline: none;
+  width: 300px;
+  height: 30px;
+  line-height: 30px;
+}
+.checkbox {
+  display: flex;
+  flex-direction: row !important;
+  align-items: center;
+  text-align: center;
+}
+.checkbox label {
+  color: #1a73e8;
+}
+input[type="checkbox"] {
+  color: #1a73e8;
+  width: 17px;
+  height: 17px;
+  appearance: none;
+  border: 1px solid #1a73e8;
+  border-radius: 5px;
+  margin-left: 10px;
+}
+input[type="checkbox"]:checked {
+  border-radius: 100%;
+  background-color: #1a73e8;
+  width: 17px;
+  height: 17px;
+}
+.formButtons {
+  display: flex;
+  justify-content: space-around;
+}
+.formButtons a {
+  text-decoration: none;
+  font-size: 1rem;
+  color: #1a73e8;
+  font-weight: bold;
+}
+.formButtons button {
+  border: none;
+  font-size: 1rem;
+  background-color: #1a73e8;
+  color: #fff;
+  width: fit-content;
+  padding: 4px 7px;
+  border-radius: 7px;
+  cursor: pointer;
+}

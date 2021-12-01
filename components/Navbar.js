@@ -18,6 +18,15 @@ const Navbar = () => {
         <Link to="/products">
           <h2>Product</h2>
         </Link>
+        <Link to="/login">
+          <h2>Login</h2>
+        </Link>
+        <Link to="/signup">
+          <h2>Sign Up</h2>
+        </Link>
+        <Link to="/coin">
+          <h2>Crypto Store</h2>
+        </Link>
       </div>
     </div>
   );
