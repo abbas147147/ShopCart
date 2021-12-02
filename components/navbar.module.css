@@ -42,3 +42,21 @@
   font-size: 1.2rem;
   width: 15px;
 }
+/* @media (max-width: 650px) {
+  .menu {
+    width: 100%;
+    text-align: left;
+    font-size: 10px;
+  }
+} */
+@media (max-width: 750px) {
+  .menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    background-color: black;
+    height: fit-content;
+    opacity: 0.3;
+    width: fit-content;
+  }
+}

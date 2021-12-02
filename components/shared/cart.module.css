@@ -70,3 +70,48 @@
   color: #fff;
   padding: 1px 5px;
 }
+
+@media (max-width: 970px) {
+  .container {
+    width: 100%;
+  }
+}
+
+@media (max-width: 730px) {
+  .container {
+    width: 100%;
+  }
+  .container img {
+    width: 60px;
+  }
+}
+@media (max-width: 650px) {
+  .container {
+    width: 100%;
+  }
+  .container img {
+    width: 50px;
+  }
+  .container h2 {
+    color: #333333;
+    font-size: 10px;
+  }
+  .category {
+    font-size: 0.8rem;
+    color: rgb(0, 78, 30);
+  }
+  .category span {
+    font-size: 0.6rem !important;
+    border-radius: 5px;
+    padding: 1.5px 5px;
+  }
+  .iCounter {
+    font-size: 0.8rem;
+    color: rgb(0, 78, 30);
+  }
+  .iCounter span {
+    padding: 2px 3px;
+    border-radius: 100%;
+    font-size: 0.6rem !important;
+  }
+}

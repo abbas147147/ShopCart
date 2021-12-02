@@ -40,3 +40,9 @@
 .red {
   color: red;
 }
+
+@media (max-width: 750px) {
+  .container {
+    width: 100%;
+  }
+}
